@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing page using HTML, CSS and JS</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <h3>Brand Name</h3>
+            </div>
+            <ul class="nav-links">
+                <a href="#!"><li>Home</li></a>
+                <a href="#!"><li>Shop</li></a>
+                <a href="#blog"><li>Blog</li></a>
+                <a href="#!"><li>Contact</li></a>
+                <a href="#!"><li class="fa fa-search"></li></a>
+                <a href="#!"><li class="fa fa-shopping-bag"></li></a>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <div class="banner">
+            <div class="left-side">
+                <img src="assets/plant.png" alt="Plant">
+            </div>
+            <div class="right-side">
+                <h1>
+                    <span id="create">decorate your home with us</span>
+                </h1>
+                <p>
+                    <span id="create">Moving into a new home can be one of life’s great joys, but it can also be a time of uncertainty, especially when it comes to decorating.
+                        <br><br>
+                        <a href="#!">
+                            <button class="btn">Shop Now</button>
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="products-section">
+            <h1>Featured Products</h1>
+            <p>Featured collections would be a list curated by you - likely to display on your home page to drive traffic to your current priorities. Collection list would be all of the collections in your store.</p>
+            <div class="products-grid">
+                <div class="products-item">
+                    <img src="assets/1.png" alt="">
+                    <br>
+                    <h2>Blue Comfortable Sofa Chair</h2>
+                    <span>Price - Rs. 1499/-</span>
+                </div>
+                <div class="products-item">
+                    <img src="assets/2.png" alt="">
+                    <br>
+                    <h2>Brown Comfortable Egg Chair</h2>
+                    <span>Price - Rs. 1499/-</span>
+                </div>
+                <div class="products-item">
+                    <img src="assets/3.png" alt="">
+                    <br>
+                    <h2>Comfortable Balcony Chair</h2>
+                    <span>Price - Rs. 1499/-</span>
+                </div>
+                <div class="products-item">
+                    <img src="assets/4.png" alt="">
+                    <br>
+                    <h2>Brown Night Lamp</h2>
+                    <span>Price - Rs. 1499/-</span>
+                </div>
+                <div class="products-item">
+                    <img src="assets/5.png" alt="">
+                    <br>
+                    <h2>Folding Table</h2>
+                    <span>Price - Rs. 1499/-</span>
+                </div>
+                <div class="products-item">
+                    <img src="assets/6.png" alt="">
+                    <br>
+                    <h2>Spaced Drawers</h2>
+                    <span>Price - Rs. 1499/-</span>
+                </div>
+            </div>
+        </div>
+        <div class="offer-parallax">
+            <div class="offer">
+                <h1>Best Offer</h1>
+                <p>Get the limited time offer this summer. Don't miss out this changed!</p>
+                <br>
+                <div id="demo"></div>
+                <div class="time-flex">
+                    <div class="time-flex-inner">
+                        <div id="days"></div>
+                        Days
+                    </div>
+                    <div class="time-flex-inner">
+                        <div id="hours"></div>
+                        Hours
+                    </div>
+                    <div class="time-flex-inner">
+                        <div id="minutes"></div>
+                        Minutes
+                    </div>
+                    <div class="time-flex-inner">
+                        <div id="seconds"></div>
+                        Seconds
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="blogs" id="blog">
+            <h1>Read Blogs</h1>
+            <div class="grid-flex">
+                <div class="column column-image" style="background-image: url('assets/left.jpg');"></div>
+                <div class="column column-right">
+                    <div class="align-item">
+                        <h2>Sofa Cum Bed</h2>
+                        <br>
+                        <p>&ldquo; Designer’s team has done focused research on sofa-cum-bed and how it can be useful for families in the longer run. We have designed a unique range of this type of furniture. The range offers great…</p>
+                        <br>
+                        <button class="btn-two">Read More</button>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-flex">
+                <div class="column column-image" style="background-image: url('assets/right.jpg');">&nbsp;</div>
+                <div class="column column-left">
+                    <div class="align-item">
+                        <h2>Luxurious Dining Table</h2>
+                        <br>
+                        <p>&ldquo; Designer’s team has done focused research on comfortable cello chairs and how it can be useful for families in the longer run. We have designed a unique range of this type of furniture. The range offers great…</p>
+                        <br>
+                        <button class="btn-two">Read More</button>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter-parallax">
+            <div class="news">
+                <h1>Join our newsletter now</h1>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <input type="button" name="button" id="button" value="Subscribe">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-item">
+                <div class="logo">
+                    <h3>Brand Name</h3>
+                </div>
+                <br>
+                <p>Moving into a new home can be one of life’s great joys, but it can also be a time of uncertainty, especially when it comes to decorating.</p>
+            </div>
+            <div class="footer-item">
+                <div class="logo">
+                    <h3>Useful Links</h3>
+                </div>
+                <br>
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Shop</li>
+                    <li>Wishlist</li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <div class="logo">
+                    <h3>Privacy Links</h3>
+                </div>
+                <br>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Return Policy</li>
+                    <li>Exchange Policy</li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <div class="logo">
+                    <h3>Contact Links</h3>
+                </div>
+                <br>
+                <ul>
+                    <li>Write to us</li>
+                    <li>Follow on Instagram</li>
+                    <li>Follow on Twitter</li>
+                    <li>Follow on LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="copy">All Rights Reserved &copy;Brand Name 2023</div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
