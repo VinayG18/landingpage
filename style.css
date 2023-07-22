@@ -116,6 +116,66 @@ ul li {
 	transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden !important;
+	}
+	.nav .nav-links {
+		position: absolute;
+		top: 50px;
+		background-color: var(--secondary-color);
+		flex-direction: column;
+		justify-content: unset;
+		width: 100%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		display: none;
+	}
+	.nav .nav-links li {
+		opacity: 0;
+		padding: 20px;
+	}
+	.burger {
+		display: block;
+	}
+	.nav .logo {
+		width: 50%;
+	}
+}
+
+.nav-active {
+	transform: translate(0%) !important;
+	right: 0px;
+	z-index: 100;
+	position: absolute;
+	height: 100vh;
+	display: block !important;
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+	opacity: 0;
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* Banner Started */
 
 .banner {
@@ -180,6 +240,103 @@ ul li {
 	font-size: 18px;
 }
 
+@media screen and (max-width: 1257px) {
+	.banner {
+		padding: 50px;
+	}
+
+	.banner .left-side {
+		top: 50px;
+		left: 0px;
+		width: 50%;
+	}
+	.banner .right-side {
+		margin-top: 8rem;
+		right: 40px;
+		width: 60%;
+	}
+	.banner .left-side img {
+		max-width: 100%;
+	}
+
+	.banner .right-side h1 {
+		font-size: 50px;
+	}
+	.banner .right-side p {
+		font-size: 30px;
+	}
+	.banner .right-side p .btn {
+		width: 100px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.banner {
+		padding: 10px;
+		height: 70vh;
+	}
+
+	.banner .left-side {
+		top: 100px;
+		left: 0px;
+		width: 50%;
+	}
+	.banner .right-side {
+		margin-top: 8rem;
+		right: 20px;
+		width: 50%;
+	}
+	.banner .left-side img {
+		max-width: 100%;
+	}
+
+	.banner .right-side h1 {
+		font-size: 20px;
+	}
+	.banner .right-side p {
+		font-size: 16px;
+	}
+	.banner .right-side p .btn {
+		width: 100px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.banner {
+		padding: 10px;
+		height: 70vh;
+	}
+
+	.banner .left-side {
+		top: 100px;
+		left: -40px;
+		width: 50%;
+	}
+	.banner .right-side {
+		margin-top: 7rem;
+		right: 20px;
+		width: 50%;
+	}
+	.banner .left-side img {
+		max-width: 150%;
+	}
+
+	.banner .right-side h1 {
+		font-size: 20px;
+	}
+	.banner .right-side p {
+		font-size: 12px;
+	}
+	.banner .right-side p .btn {
+		width: 100px;
+		font-size: 14px;
+	}
+}
+
+/* Banner Finished */
+
 /* Products Section */
 
 .products-section {
@@ -225,6 +382,23 @@ ul li {
 	padding: 20px;
 }
 
+@media screen and (max-width: 768px) {
+	.products-section h1 {
+		font-size: 24px;
+	}
+	.products-grid {
+		grid-template-columns: auto;
+	}
+	.product-item {
+		padding: 0;
+	}
+	.products-section p {
+		max-width: 90%;
+	}
+}
+
+/* Products Section Ended */
+
 /* Offer Parallax */
 .offer-parallax {
 	width: 100%;
@@ -265,6 +439,28 @@ ul li {
 	margin-right: 1rem;
 	background: var(--white-color);
 }
+
+@media screen and (max-width: 768px) {
+	.offer-parallax {
+		min-height: 40vh;
+	}
+	.offer-parallax .offer {
+		width: 100%;
+		float: none;
+		padding: 10px;
+	}
+	.time-flex-inner {
+		width: 30%;
+		height: 60px;
+		color: var(--dark-color);
+		padding: 5px;
+		border-radius: 8px;
+		margin-right: 0.5rem;
+		background: var(--white-color);
+	}
+}
+
+/* Offer Parallax ended */
 
 /* Blogs Flexbox */
 
@@ -332,6 +528,40 @@ ul li {
 	color: var(--dark-color);
 }
 
+@media screen and (max-width: 900px) {
+	.blogs h1 {
+		font-size: 24px;
+	}
+	.grid-flex {
+		height: 40em;
+		display: -webkit-flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	.column {
+		order: vertical;
+	}
+	.column-left {
+		-webkit-box-ordinal-group: 0;
+		-webkit-order: 0;
+		-ms-flex-order: 0;
+		order: 0;
+		text-align: center;
+	}
+	.column-right {
+		text-align: center;
+	}
+	.column p {
+		padding: 10px;
+	}
+	.align-item {
+		width: 90%;
+		margin-top: 1rem;
+	}
+}
+
+/* Blogs Flexbox ended */
+
 /* Newsletter Parallax */
 .newsletter-parallax {
 	width: 100%;
@@ -389,6 +619,14 @@ ul li {
 	cursor: pointer;
 }
 
+@media screen and (max-width: 370px) {
+	.newsletter-parallax input[type="button"] {
+		margin-top: 1rem;
+	}
+}
+
+/* Newsletter Parallax */
+
 /* Footer */
 footer {
 	width: 100%;
@@ -422,3 +660,14 @@ footer {
 	color: var(--white-color);
 	padding: 10px;
 }
+
+@media screen and (max-width: 768px) {
+	.footer {
+		flex-direction: column;
+	}
+	.footer .footer-item {
+		max-width: 100%;
+	}
+}
+
+/* Footer Ended */
